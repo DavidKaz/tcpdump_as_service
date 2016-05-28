@@ -1,0 +1,1 @@
+DAEMON_ARGS="-i bond0 -w /var/tcpdump/dump_bond0_ -s 0 -C 100 -W 200"

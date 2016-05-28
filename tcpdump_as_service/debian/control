@@ -1,0 +1,15 @@
+Source: tcpdump-as-service
+Maintainer: David Kazantsev <dkazantsev@nvision-group.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9)
+
+Package: tcpdump-as-service
+Architecture: all
+Depends: ${misc:Depends}, tcpdump, lsof, bzip2
+Suggests: perl
+Description: Init and cron script helping to run tcpdump as service
+ The package consists of 5 init.d files intended to start tcpdump as service 
+ and archiving scripts that should be crontabbed.
+ Changes to /etc/fstab to reduce load on hdd can be made as well.

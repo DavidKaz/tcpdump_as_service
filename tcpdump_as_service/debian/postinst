@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+echo "Add the following lines to /etc/fstab"
+echo "# tmpfs for tcpdump"
+echo "none            /var/tcpdump    tmpfs   size=10G            0       0"
+echo "Then execute 'mount /var/tcpdump' once"
+echo "After that add following line to crontab"
+echo "*/5 * * * * /usr/local/sbin/archive_tcpdump.sh"
+echo "and activate needed services"
+echo "update-rc.d tcpdump_bond0 defaults"
+echo "update-rc.d tcpdump_any defaults"
+echo "update-rc.d tcpdump_eth0 defaults"
+echo "update-rc.d tcpdump_eth1 defaults"
+echo "update-rc.d tcpdump_eth2 defaults"
+#DEBHELPER#

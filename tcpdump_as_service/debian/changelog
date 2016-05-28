@@ -1,0 +1,40 @@
+tcpdump-as-service (3.11-1) sid; urgency=low
+
+  * USEDSPACELIMIT and clear_folder function added
+
+ -- David Kazantsev <dkazantsev@nvision-group.com>  Wed, 06 Apr 2016 11:36:49 +0000
+
+tcpdump-as-service (3.10-2) sid; urgency=low
+
+  * postinst message fixed
+
+ -- David Kazantsev <dkazantsev@nvision-group.com>  Mon, 04 Apr 2016 15:02:57 +0300
+
+tcpdump-as-service (3.10-1) sid; urgency=low 
+
+  [ David Kazantsev ]
+  * Everything moved from /root/scripts/ to system directories
+
+ -- David Kazantsev <dkazantsev@nvision-group.com>  Mon, 04 Apr 2016 14:28:56 +0300
+
+tcpdump-as-service (3.9-1) sid; urgency=low
+
+  [ David Kazantsev ]
+  * Initial release with deb package.
+
+  [ David Kazantsev ]
+  * Initial release closing bug:). (Closes: #1103652)
+
+  [ David Kazantsev ]
+  * All sections reworked. Deletion of old files in tcpdumpsdir added.
+
+  [ David Kazantsev ]
+  * PID check for archive script added
+
+  [ David Kazantsev ]
+  * /etc/tcpdump.d/ introduced
+
+  [ David KAzantsev ]
+  * status command added
+
+ -- David Kazantsev <dkazantsev@nvision-group.com>  Mon, 04 Apr 2016 12:00:14 +0300

@@ -1,0 +1,1 @@
+DAEMON_ARGS="-i any -w /var/tcpdump/dump_any_ -s 0 -C 100 -W 200"
